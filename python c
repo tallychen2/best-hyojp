@@ -1,0 +1,18 @@
+import random
+
+def main():
+    # Generate a random list of integers
+    lst = [random.randint(0, 100) for _ in range(10)]
+
+    # Sort the list in ascending order
+    lst.sort()
+
+    # Calculate the sum of the first five integers in the list
+    total = sum(lst[:5])
+
+    # Print the list and the sum of the first five integers
+    print(f"The original list is: {lst}")
+    print(f"The sum of the first five integers is: {total}")
+
+if __name__ == "__main__":
+    main()
